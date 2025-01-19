@@ -107,15 +107,19 @@ img {
 
 p { 
     position: relative;
-    line-height: 2.1vw;
+    overflow: visible;
+    line-height: 1.5rem;
     top: 25%;
     left: var(--indentation);
-    width: 90%;
+    width: auto;
     font-weight: bold;
+    height: auto;
+    padding-right: 10%;
 }
 
 
 .top{
+    
     height: calc(100vh/3);
     display: flex;
     flex: auto;
@@ -185,12 +189,12 @@ input:focus {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 0.8rem 2.5rem;
     border-radius: 0.4rem;
-    font-weight: bold;
+    font-weight: 600;
 
 }
 
 label {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 550;
 }
 
