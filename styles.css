@@ -1,3 +1,14 @@
+:root{
+    line-height: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6vh;
+    --indentation: 5%
+    
+    
+}
+
+
+
 body {
     height:100vh;
     width: 100vw;
@@ -23,21 +34,20 @@ div{
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 .vegeto{
-    position: relative;
-    top: 0;
-    width: 8rem;
-    flex-shrink: 0;
     width: auto;
-    height: auto;
-    
+    height: 90%;
 }
 
 .left{
-    position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex: auto;
     background-color: blue;
     width: 30vw;
@@ -45,30 +55,44 @@ img {
     overflow: hidden;
 }
 
-.banner-text {
-    flex: auto;
-    position: relative;
-    color: white;
-    font-size: 2.4rem;
-    align-self: center;
-    transform: scaleY(1.8);
-    font-weight: 650;
-    right: 10px;
-    max-width: 120px;
-    max-height: ;
-}
 
 .banner {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex: auto;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.423);
-    width: 100%;
+    width: 30vw;
     height: 15%;
     top: 13vh;
     align-content: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
     
+    
+}
+
+
+.banner-text {
+    display: inline-block;
+    color: white;
+    font-size: 3rem;
+    width: auto;
+    transform: scaleY(1.8);
+    font-weight: 650;
+    max-height: 100%;
+    padding: 0;
+}
+
+
+.credits {
+    color: white;
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .right{
@@ -79,22 +103,103 @@ img {
     height: 100%;
 }
 
+
+
+p { 
+    position: relative;
+    line-height: 2.1vw;
+    top: 25%;
+    left: var(--indentation);
+    width: 90%;
+    font-weight: bold;
+}
+
+
 .top{
+    height: calc(100vh/3);
+    display: flex;
     flex: auto;
     background-color: white;
     position: relative;
     background-color: rgb(246, 246, 246);
+
 }
+
+
 .middle{
+    position: relative;
+    display: flex;
+    line-height: 1vh;
+    font-size: 1.2vh;
     flex: auto;
     background-color: white;
     position: relative;  
+    height: calc(100vh/3);
+    gap: 3vh;
+}
 
+.middle-left {
+    position: relative;
+    left: var(--indentation);
+}
+
+.middle-right {
+    position: relative;
+    left: var(--indentation);
 }
 
 .bottom{
-    border-top: 5px solid rgba(0, 0, 0, 0.067);
+    border-top: 0.5vh solid rgba(0, 0, 0, 0.067);
     flex: auto;
     background-color: rgb(244, 244, 244);
     position: relative;
+    height: calc(100vh/3);
+}
+
+input {
+    width: 20vh;
+    height: 2vh;
+    border: 0.01rem solid black;
+    border-radius: 2px;
+    font-size: 0.9rem;
+}
+
+a{
+    color: white;
+}
+
+input:focus {
+    border: 0.01rem solid blue;
+    outline: none;
+    box-shadow: 1px 1px 3px 1px grey;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    position: relative;
+    left: var(--indentation);
+    background-color: rgb(11, 90, 11);
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0.8rem 2.5rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+
+}
+
+label {
+    font-size: 0.6rem;
+    font-weight: 550;
+}
+
+.btn-text {
+    font-size: 0.8rem;
+    font-weight: 550;
+
+}
+
+input:invalid {
+    border-color: red;
 }
